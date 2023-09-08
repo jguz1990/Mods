@@ -1,0 +1,456 @@
+{
+  "Order": [
+    {
+      "UUID": "79beb0c1-340d-45ea-b112-569a7df9f2e7",
+      "Name": "Blueberry Bliss Dice"
+    },
+    {
+      "UUID": "3316f1e0-9ed2-4493-967e-80a3a826c72e",
+      "Name": "Diamond Dice"
+    },
+    {
+      "UUID": "42273b05-58d8-4fc1-a1e6-16d034c7d828",
+      "Name": "Glassy Gleam Dice"
+    },
+    {
+      "UUID": "ee606255-e4a4-496a-8497-1ca38af7d3fb",
+      "Name": "Golden Death Dice"
+    },
+    {
+      "UUID": "748889fd-8ef9-4241-912b-b89b2d957589",
+      "Name": "Infernal Dice"
+    },
+    {
+      "UUID": "84e98e22-75c5-4f1e-a868-ca52c3b19fb7",
+      "Name": "Lavender haze dice"
+    },
+    {
+      "UUID": "4b4a5142-42b1-41a6-9b35-63f991dbf20e",
+      "Name": "Lilac Cream Dice"
+    },
+    {
+      "UUID": "35aa9457-14c8-4cb7-9251-b04ccd0a2bd7",
+      "Name": "Mellow Mint Dice"
+    },
+    {
+      "UUID": "e6e87aa2-5baa-4d9d-887e-f48d4eacd196",
+      "Name": "Pink Luminary Dice"
+    },
+    {
+      "UUID": "dd5796ec-a5d3-4a48-938c-c1e359e0e870",
+      "Name": "Pink Milk Dice"
+    },
+    {
+      "UUID": "19cf3023-b22b-46ce-b2aa-357aa26f7d20",
+      "Name": "Rose Crown Dice"
+    },
+    {
+      "UUID": "650af4d1-ffe2-487b-8643-c14056fd8b3c",
+      "Name": "Selûnite Dice"
+    },
+    {
+      "UUID": "1fd3c66b-6952-486a-8364-d5e67c636b71",
+      "Name": "Strawberry Gummy Dice"
+    },
+    {
+      "UUID": "74b6bfc1-dd7c-4a5c-a148-f64f9aeb6213",
+      "Name": "Raspberry Crystal"
+    },
+    {
+      "UUID": "2751e638-e72a-4ff8-b485-43016b4adbfd",
+      "Name": "Amethyst Dice - All Numbers"
+    },
+    {
+      "UUID": "1d6ece6c-b9e1-430e-8263-BE-Batch1n2",
+      "Name": "Backgrounds Enhanced - Batch 1 and 2"
+    },
+    {
+      "UUID": "f3142313-76f9-4971-b792-f5f081f973da",
+      "Name": "Paladin's Oath"
+    },
+    {
+      "UUID": "c4b61fcc-5450-49da-a2c1-6b24acdd4dd9",
+      "Name": "BetterDualWielding"
+    },
+    {
+      "UUID": "c3defb0c-7882-4040-938c-813ad6878bfb",
+      "Name": "Path of the Giant"
+    },
+    {
+      "UUID": "1d6ece6c-b9e1-430e-8263-ShadowheartDomainCombinations",
+      "Name": "Shadowheart Unleashed - Domain Combinations"
+    },
+    {
+      "UUID": "1d6ece6c-b9e1-430e-8263-ShadowheartDomainCombinationsL2SHA",
+      "Name": "Shadowheart Unleashed - DC - L2 Standalone - Heavy Armor"
+    },
+    {
+      "UUID": "248dfe45-70cb-474f-825c-c58a72cff970",
+      "Name": "UACunningStrike"
+    },
+    {
+      "UUID": "f75cb957-e7eb-48b5-8c6a-e94d02d8a84e",
+      "Name": "BetterLoot"
+    },
+    {
+      "UUID": "64d01e62-c3ef-4523-85f3-7e28789c7d8a",
+      "Name": "UnderwearOfRitualsnoMisty"
+    },
+    {
+      "UUID": "88888888-4444-4444-4444-UnvisualHagsEye",
+      "Name": "Unvisual Hag's Eye"
+    },
+    {
+      "UUID": "88888888-4444-4444-4444-UnvisualHalfIllithid",
+      "Name": "Unvisual Half-Illithid"
+    },
+    {
+      "UUID": "88888888-4444-4444-4444-UnvisualVolosEye",
+      "Name": "Unvisual Volo's Eye"
+    },
+    {
+      "UUID": "255b2fda-2e05-4dad-b5e6-28587cea4854",
+      "Name": "AS_ExtraDyes_Bundle"
+    },
+    {
+      "UUID": "973d6e34-065a-48fb-9fee-18278c1f7e03",
+      "Name": "More Gold - C"
+    },
+    {
+      "UUID": "2d3c3786-abaa-4356-9d03-02f8ffd07985",
+      "Name": "More Soul Coins - D"
+    },
+    {
+      "UUID": "fe952080-4cd5-43ca-8805-90e293144964",
+      "Name": "ApprovalTweaks"
+    },
+    {
+      "UUID": "1d6ece6c-b9e1-430e-8263-7d223a78abmhSPM",
+      "Name": "Carry Weight Increased 9000 - Standalone Pickup More"
+    },
+    {
+      "UUID": "e64e2e53-92c3-444e-a374-0d6638ed4e99",
+      "Name": "Daughter of Lolth - Chosen Path"
+    },
+    {
+      "UUID": "rings00-0000-0000-0000-xxSeymordius",
+      "Name": "Rings Expanded - Immersive"
+    },
+    {
+      "UUID": "e2f68acb-3c55-4794-844e-da25420b0792",
+      "Name": "ArmourOfVengeance"
+    },
+    {
+      "UUID": "c77763a2-5770-4611-8e8e-415ac06ad7d6",
+      "Name": "BloodOfLathanderReDivined"
+    },
+    {
+      "UUID": "89c68dad-44fa-4252-b7f7-b8edf9bfc1f1",
+      "Name": "DrowLeatherBootsForMinthara"
+    },
+    {
+      "UUID": "b8d4a296-ce66-4fe9-b129-a3957bdef978",
+      "Name": "Kharesh"
+    },
+    {
+      "UUID": "c77763a2-5770-4611-8e8e-415ac06ad666",
+      "Name": "NeedleDaggerEnhanced"
+    },
+    {
+      "UUID": "62333410-e6f3-4c38-aa6a-cb03e126421e",
+      "Name": "DrowClericArmor"
+    },
+    {
+      "UUID": "57d87816-ac58-4a37-90ad-0fda409c5557",
+      "Name": "StrongerBosses"
+    },
+    {
+      "UUID": "6ef804ed-1dd0-4f97-9cf7-5e29a51829ca",
+      "Name": "TacticianPlusHealth"
+    },
+    {
+      "UUID": "e1fb0ff5-dd5e-471d-b2c4-c19c288fa5e7",
+      "Name": "TacticianPlusStats"
+    },
+    {
+      "UUID": "bad404aa-feed-A0Ea-6666-deeeeeeeeeef",
+      "Name": "Books Notes Zero Weight"
+    },
+    {
+      "UUID": "bad404aa-feed-a0ee-9999-feedfeed0004",
+      "Name": "Food Supplies Zero Weight"
+    },
+    {
+      "UUID": "GOLDWEIG-HTZE-RO12-4444-deeeeeeeeeef",
+      "Name": "Gold Weight Zero"
+    },
+    {
+      "UUID": "bad404aa-feed-a0ee-9999-feedfeed0002",
+      "Name": "Everybody Dyes Unlimited Dyeing."
+    },
+    {
+      "UUID": "fb5f528d-4d48-4bf2-a668-2274d3cfba96",
+      "Name": "5eSpells"
+    },
+    {
+      "UUID": "26c29727-92c0-4601-9bf2-043ca3e5b4d8",
+      "Name": "Warcaster"
+    },
+    {
+      "UUID": "1d6ece6c-b9e1-430e-8263-7d223a78abmh",
+      "Name": "Carry Weight Increased 9000"
+    },
+    {
+      "UUID": "c5755cf1-d18d-4ed7-b762-55c9bad174e1",
+      "Name": "SpellAttack Sacred Flame"
+    },
+    {
+      "UUID": "90c7948a-7112-4f20-ace3-993de382d743",
+      "Name": "KleptomaniacToolkit"
+    },
+    {
+      "UUID": "0334756a-3942-11ee-be56-0242ac120002",
+      "Name": "DivineFavorUntilRest"
+    },
+    {
+      "UUID": "bad404aa-feed-a0ee-7777-deeeeeeeeeef",
+      "Name": "LongRest Featherfall"
+    },
+    {
+      "UUID": "LONGSTRI-DERA-OE12-4444-deeeeeeeeeef",
+      "Name": "Longstrider AoE"
+    },
+    {
+      "UUID": "1d6ece6c-b9e1-430e-8263-UltimateGuidance",
+      "Name": "Ultimate Guidance"
+    },
+    {
+      "UUID": "bad404aa-feed-A0Ea-4444-deeeeeeeeeef",
+      "Name": "Enhanced Leap AoE"
+    },
+    {
+      "UUID": "5ef63038-3928-11ee-be56-0242ac120002",
+      "Name": "NoConcentrationShieldOfFaith"
+    },
+    {
+      "UUID": "c729da22-9132-400f-a02a-5f6c13b99e85",
+      "Name": "MirrorImageImproved"
+    },
+    {
+      "UUID": "c754bfad-a4e9-4c79-979d-2123e796ac06",
+      "Name": "Bless Enhanced - G"
+    },
+    {
+      "UUID": "0de85b9a-8071-4b2e-9a33-26bdf1756331",
+      "Name": "InvisibilityClassFeatures"
+    },
+    {
+      "UUID": "3730608a-270e-43da-9638-e038aa1a0b08",
+      "Name": "InvisibilityExtended"
+    },
+    {
+      "UUID": "6e316ec3-c46f-42b7-bb01-42343da9fc9d",
+      "Name": "InvisibilityInteractive"
+    },
+    {
+      "UUID": "2766d61b-d002-448a-883a-dc472f142a9c",
+      "Name": "FlyLongRest"
+    },
+    {
+      "UUID": "c5755cf1-d18d-4ed7-b762-55c9bad909EK",
+      "Name": "EldritchKnightPlusFullCasterVer"
+    },
+    {
+      "UUID": "1d6ece6c-b9e1-430e-8263-InvocationsExpanded",
+      "Name": "Invocations Expanded"
+    },
+    {
+      "UUID": "d903677e-f24b-48ec-ab20-98dab116a371",
+      "Name": "Weapon Skill Cooldown"
+    },
+    {
+      "UUID": "1c9f73f8-7513-49a9-8882-b796eab331f5",
+      "Name": "DyeDyeDye"
+    },
+    {
+      "UUID": "00000000-0000-0000-0003-xRogerRogers",
+      "Name": "DarkerDyes"
+    },
+    {
+      "UUID": "36eec61c-9152-43d6-be8a-xOldBoyDemon",
+      "Name": "Demon's Simple Dyes"
+    },
+    {
+      "UUID": "3e158fb8-686e-4153-9430-e27f4b9fb7f8",
+      "Name": "BagsBagsBags"
+    },
+    {
+      "UUID": "48cc6be3-f1c4-4acb-9172-189f13b1d753",
+      "Name": "JWL Drop All The Loot"
+    },
+    {
+      "UUID": "5593c5cd-b273-4048-ae87-635c1d487a5e",
+      "Name": "JWL Crafting Framework"
+    },
+    {
+      "UUID": "105731d3-4142-4015-bd5a-3891ab9d7ee1",
+      "Name": "JWL Soul Smithing - Upgrade Your Gear"
+    },
+    {
+      "UUID": "1d6ece6c-b9e1-430e-8263-PaladinUnleashed",
+      "Name": "Paladin Unleashed"
+    },
+    {
+      "UUID": "1d6ece6c-b9e1-430e-8263-WarlockUnleashedUltimate",
+      "Name": "Warlock Unleashed - Ultimate Warlock"
+    },
+    {
+      "UUID": "3e4fea2f-f6db-4841-b294-8d32ce28095f",
+      "Name": "MoreSpellSlots"
+    },
+    {
+      "UUID": "8644c362-0eff-4aac-a429-8508fee4ec41",
+      "Name": "ShortRestTweaks"
+    },
+    {
+      "UUID": "b5c359a5-3894-4240-b532-0837ecf06d85",
+      "Name": "ModifiedShortRest25"
+    },
+    {
+      "UUID": "d903677e-f24b-48ec-ab20-98dcc116a371",
+      "Name": "UnlockLevelCurve"
+    },
+    {
+      "UUID": "e53ae4b5-a922-47ef-b69d-d55c5745a65b",
+      "Name": "UnlockLevelCurve_Patch_Double"
+    },
+    {
+      "UUID": "cf0b4eed-8b58-4981-8ab8-bf210d4db97b",
+      "Name": "UnlockLevelCurve_Patch_5eSpells"
+    },
+    {
+      "UUID": "bad404aa-feed-a0ee-8888-deeeeeeeeeef",
+      "Name": "Spell Sniper Fix"
+    },
+    {
+      "UUID": "d8948833-e4a7-4ba5-b60c-14d3b18cd692",
+      "Name": "Feat Every 2 Levels"
+    },
+    {
+      "UUID": "71aeff2f-4e89-4eb1-bb36-d12a4b3a9452",
+      "Name": "FeatsUpgrade"
+    },
+    {
+      "UUID": "0c036a05-f3e4-4422-87bd-eadadf96c161",
+      "Name": "featsextra"
+    },
+    {
+      "UUID": "4e802d57-8064-4238-88d8-3f6d6523d3d6",
+      "Name": "Moonmaiden's Favor "
+    },
+    {
+      "UUID": "3f7f2f4b-2baf-4a1e-932c-20afbd8d4c0f",
+      "Name": "Unearthed Arcana"
+    },
+    {
+      "UUID": "cfc82acc-e0ec-4f12-b39a-bdde3a2c7246",
+      "Name": "Wyll's Devil Form"
+    },
+    {
+      "UUID": "1d6ece6c-b9e1-430e-8263-LOHRestored",
+      "Name": "Lay On Hands Restored"
+    },
+    {
+      "UUID": "83b53cf6-6c24-4be4-b942-b54b3833af35",
+      "Name": "BardSongOfRestTweaks"
+    },
+    {
+      "UUID": "560497d3-63b4-4dbe-a1c8-a10497ccc009",
+      "Name": "DrowGear"
+    },
+    {
+      "UUID": "cb6df1c2-31ab-4fc0-8e20-FlyAOEcon",
+      "Name": "FlyAOEcon"
+    },
+    {
+      "UUID": "cb6df1c2-31ab-4fc0-8e20-FreedomMovementAOE",
+      "Name": "FreedomMovementAOE"
+    },
+    {
+      "UUID": "cb6df1c2-31ab-4fc0-8e20-GreaterInvisibilityAOEconINF",
+      "Name": "GreaterInvisibilityAOEconINF"
+    },
+    {
+      "UUID": "cb6df1c2-31ab-4fc0-8e20-HeroismAOEcon",
+      "Name": "HeroismAOEcon"
+    },
+    {
+      "UUID": "01f3782b-1a2c-4af4-9689-aaff4699a019",
+      "Name": "Hex Enhanced - A"
+    },
+    {
+      "UUID": "cb6df1c2-31ab-4fc0-8e20-LeapAOEinf",
+      "Name": "LeapAOEinf"
+    },
+    {
+      "UUID": "4ef85eef-dea6-4e78-957b-ad08b8ffa051",
+      "Name": "Path of the Giant Addon"
+    },
+    {
+      "UUID": "cb6df1c2-31ab-4fc0-8e20-RallyAOE",
+      "Name": "RallyAOE"
+    },
+    {
+      "UUID": "cb6df1c2-31ab-4fc0-8e20-SeeInvisibilityAOE",
+      "Name": "SeeInvisibilityAOE"
+    },
+    {
+      "UUID": "cb6df1c2-31ab-4fc0-8e20-SmiteBanishingNoCon",
+      "Name": "SmiteBanishingNoCon"
+    },
+    {
+      "UUID": "cb6df1c2-31ab-4fc0-8e20-SmiteBrandingNoCon",
+      "Name": "SmiteBrandingNoCon"
+    },
+    {
+      "UUID": "cb6df1c2-31ab-4fc0-8e20-SmiteSearingNoCon",
+      "Name": "SmiteSearingNoCon"
+    },
+    {
+      "UUID": "cb6df1c2-31ab-4fc0-8e20-SmiteWrathfulNoCon",
+      "Name": "SmiteWrathfulNoCon"
+    },
+    {
+      "UUID": "cb6df1c2-31ab-4fc0-8e20-StaggeringSmiteNoCon",
+      "Name": "StaggeringSmiteNoCon"
+    },
+    {
+      "UUID": "cb6df1c2-31ab-4fc0-8e20-StoneskinAOEcon",
+      "Name": "StoneskinAOEcon"
+    },
+    {
+      "UUID": "cb6df1c2-31ab-4fc0-8e20-ThaumaturgyAOE",
+      "Name": "ThaumaturgyAOE"
+    },
+    {
+      "UUID": "474d0f2d-513b-4938-9f5b-8f19a72076f9",
+      "Name": "True Strike Enhanced"
+    },
+    {
+      "UUID": "cb6df1c2-31ab-4fc0-8e20-TrueSeeingAOE",
+      "Name": "TrueSeeingAOE"
+    },
+    {
+      "UUID": "cb6df1c2-31ab-4fc0-8e20-WebNoCon",
+      "Name": "WebNoCon"
+    },
+    {
+      "UUID": "cb6df1c2-31ab-4fc0-8e20-BardicInspirationAOE",
+      "Name": "BardicInspirationAOE"
+    },
+    {
+      "UUID": "8685d0ca-f03b-4e23-9166-ebe80f65e46d",
+      "Name": "No More Looping VFX And SFX On Buffs"
+    }
+  ]
+}
