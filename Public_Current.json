@@ -1,12 +1,12 @@
 {
   "Order": [
     {
-      "UUID": "79beb0c1-340d-45ea-b112-569a7df9f2e7",
-      "Name": "Blueberry Bliss Dice"
-    },
-    {
       "UUID": "3316f1e0-9ed2-4493-967e-80a3a826c72e",
       "Name": "Diamond Dice"
+    },
+    {
+      "UUID": "79beb0c1-340d-45ea-b112-569a7df9f2e7",
+      "Name": "Blueberry Bliss Dice"
     },
     {
       "UUID": "42273b05-58d8-4fc1-a1e6-16d034c7d828",
