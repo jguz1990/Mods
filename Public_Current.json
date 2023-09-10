@@ -113,6 +113,10 @@
       "Name": "AS_ExtraDyes_Bundle"
     },
     {
+      "UUID": "4023c256-4242-4cd0-9afa-9026aaedf2d4",
+      "Name": "SecretScrolls"
+    },
+    {
       "UUID": "973d6e34-065a-48fb-9fee-18278c1f7e03",
       "Name": "More Gold - C"
     },
@@ -349,10 +353,6 @@
       "Name": "Moonmaiden's Favor "
     },
     {
-      "UUID": "3f7f2f4b-2baf-4a1e-932c-20afbd8d4c0f",
-      "Name": "Unearthed Arcana"
-    },
-    {
       "UUID": "cfc82acc-e0ec-4f12-b39a-bdde3a2c7246",
       "Name": "Wyll's Devil Form"
     },
@@ -459,6 +459,10 @@
     {
       "UUID": "8685d0ca-f03b-4e23-9166-ebe80f65e46d",
       "Name": "No More Looping VFX And SFX On Buffs"
+    },
+    {
+      "UUID": "3f7f2f4b-2baf-4a1e-932c-20afbd8d4c0f",
+      "Name": "Unearthed Arcana"
     }
   ]
 }
