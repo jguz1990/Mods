@@ -65,6 +65,14 @@
       "Name": "Backgrounds Enhanced - Batch 1 and 2"
     },
     {
+      "UUID": "67fbbd53-7c7d-4cfa-9409-6d737b4d92a9",
+      "Name": "SubclassCompatibilityFramework"
+    },
+    {
+      "UUID": "87d58f99-e259-4050-988f-f1e7fa56a072",
+      "Name": "Alfira"
+    },
+    {
       "UUID": "f3142313-76f9-4971-b792-f5f081f973da",
       "Name": "Paladin's Oath"
     },
@@ -273,6 +281,14 @@
       "Name": "Weapon Skill Cooldown"
     },
     {
+      "UUID": "d35c2dcc-0b3c-41db-a9b8-bbe94deb33d5",
+      "Name": "DrowGear"
+    },
+    {
+      "UUID": "cb0c5806-de14-4a94-81f6-72552ef037ec",
+      "Name": "DarkJusticiarAlways"
+    },
+    {
       "UUID": "1c9f73f8-7513-49a9-8882-b796eab331f5",
       "Name": "DyeDyeDye"
     },
@@ -363,10 +379,6 @@
     {
       "UUID": "83b53cf6-6c24-4be4-b942-b54b3833af35",
       "Name": "BardSongOfRestTweaks"
-    },
-    {
-      "UUID": "560497d3-63b4-4dbe-a1c8-a10497ccc009",
-      "Name": "DrowGear"
     },
     {
       "UUID": "a5206fb2-bac3-4021-82b7-09824bd37e35",
