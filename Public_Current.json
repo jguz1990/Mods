@@ -1,6 +1,10 @@
 {
   "Order": [
     {
+      "UUID": "f75cb957-e7eb-48b5-8c6a-e94d02d8a84e",
+      "Name": "BetterLoot"
+    },
+    {
       "UUID": "3316f1e0-9ed2-4493-967e-80a3a826c72e",
       "Name": "Diamond Dice"
     },
@@ -99,10 +103,6 @@
     {
       "UUID": "248dfe45-70cb-474f-825c-c58a72cff970",
       "Name": "UACunningStrike"
-    },
-    {
-      "UUID": "f75cb957-e7eb-48b5-8c6a-e94d02d8a84e",
-      "Name": "BetterLoot"
     },
     {
       "UUID": "64d01e62-c3ef-4523-85f3-7e28789c7d8a",
