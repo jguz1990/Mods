@@ -1,10 +1,13 @@
 {
   "Order": [
     {
+<<<<<<< HEAD
       "UUID": "94399849-6d6c-4582-ad5e-c5bc52fd1408",
       "Name": "No More Dirt and Blood"
     },
     {
+=======
+>>>>>>> parent of b5dd702 (Update)
       "UUID": "3316f1e0-9ed2-4493-967e-80a3a826c72e",
       "Name": "Diamond Dice"
     },
