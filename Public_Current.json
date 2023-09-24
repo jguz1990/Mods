@@ -2,8 +2,13 @@
   "Order": [
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
       "UUID": "94399849-6d6c-4582-ad5e-c5bc52fd1408",
       "Name": "No More Dirt and Blood"
+=======
+      "UUID": "f75cb957-e7eb-48b5-8c6a-e94d02d8a84e",
+      "Name": "BetterLoot"
+>>>>>>> parent of 5f35e8f (Updates)
     },
     {
 =======
@@ -68,6 +73,7 @@
       "Name": "Amethyst Dice - All Numbers"
     },
     {
+<<<<<<< HEAD
       "UUID": "d3398d11-f360-497d-90c1-a931fe3509f4",
       "Name": "featsExpanded"
     },
@@ -136,16 +142,22 @@
       "Name": "Vessnelle_Hair3"
     },
     {
+=======
+>>>>>>> parent of 5f35e8f (Updates)
       "UUID": "1d6ece6c-b9e1-430e-8263-BE-Batch1n2",
       "Name": "Backgrounds Enhanced - Batch 1 and 2"
     },
     {
       "UUID": "67fbbd53-7c7d-4cfa-9409-6d737b4d92a9",
-      "Name": "CompatibilityFramework"
+      "Name": "SubclassCompatibilityFramework"
     },
     {
       "UUID": "87d58f99-e259-4050-988f-f1e7fa56a072",
       "Name": "Alfira"
+    },
+    {
+      "UUID": "94399849-6d6c-4582-ad5e-c5bc52fd1408",
+      "Name": "No More Dirt and Blood"
     },
     {
       "UUID": "f3142313-76f9-4971-b792-f5f081f973da",
@@ -170,10 +182,6 @@
     {
       "UUID": "248dfe45-70cb-474f-825c-c58a72cff970",
       "Name": "UACunningStrike"
-    },
-    {
-      "UUID": "f75cb957-e7eb-48b5-8c6a-e94d02d8a84e",
-      "Name": "BetterLoot"
     },
     {
       "UUID": "64d01e62-c3ef-4523-85f3-7e28789c7d8a",
