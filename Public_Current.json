@@ -5,6 +5,10 @@
       "Name": "BetterLoot"
     },
     {
+      "UUID": "05af7d90-6b35-4ae6-8719-c9a625491add",
+      "Name": "Pyramids of Teleport for Full Release  by SwissFred"
+    },
+    {
       "UUID": "3e158fb8-686e-4153-9430-e27f4b9fb7f8",
       "Name": "BagsBagsBags"
     },
@@ -127,30 +131,6 @@
     {
       "UUID": "1d6ece6c-b9e1-430e-8263-ShadowheartDomainCombinationsL2SHA",
       "Name": "Shadowheart Unleashed - DC - L2 Standalone - Heavy Armor"
-    },
-    {
-      "UUID": "b21e9143-0411-4c94-9837-573cd5e04368",
-      "Name": "UltimateTransmogBase"
-    },
-    {
-      "UUID": "83e02e7f-4b0d-423c-a1a1-4626614be6af",
-      "Name": "UltimateTransmogArmor"
-    },
-    {
-      "UUID": "19600d72-6cdd-4fcb-999b-322e7c9ce13c",
-      "Name": "UltimateTransmogBoots"
-    },
-    {
-      "UUID": "7e8b2ca7-bbd8-494a-ba4e-c3d743da1424",
-      "Name": "UltimateTransmogCloak"
-    },
-    {
-      "UUID": "7d382dc5-1871-49f4-a9e9-048fff65d00b",
-      "Name": "UltimateTransmogGloves"
-    },
-    {
-      "UUID": "3797cfdc-4689-4302-b64e-b787ccbe2aab",
-      "Name": "UltimateTransmogHelmet"
     },
     {
       "UUID": "248dfe45-70cb-474f-825c-c58a72cff970",
@@ -397,8 +377,8 @@
       "Name": "FeatsUpgrade"
     },
     {
-      "UUID": "d3398d11-f360-497d-90c1-a931fe3509f4",
-      "Name": "featsExpanded"
+      "UUID": "a89f5287-5d48-4ff6-a725-d315e3c70281",
+      "Name": "Feats Expanded - Compatible"
     },
     {
       "UUID": "0c036a05-f3e4-4422-87bd-eadadf96c161",
