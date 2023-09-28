@@ -1,6 +1,22 @@
 {
   "Order": [
     {
+      "UUID": "f75cb957-e7eb-48b5-8c6a-e94d02d8a84e",
+      "Name": "BetterLoot"
+    },
+    {
+      "UUID": "3e158fb8-686e-4153-9430-e27f4b9fb7f8",
+      "Name": "BagsBagsBags"
+    },
+    {
+      "UUID": "1c9f73f8-7513-49a9-8882-b796eab331f5",
+      "Name": "DyeDyeDye"
+    },
+    {
+      "UUID": "255b2fda-2e05-4dad-b5e6-28587cea4854",
+      "Name": "AS_ExtraDyes_Bundle"
+    },
+    {
       "UUID": "3316f1e0-9ed2-4493-967e-80a3a826c72e",
       "Name": "Diamond Dice"
     },
@@ -85,14 +101,6 @@
       "Name": "Starting Stats Edit"
     },
     {
-      "UUID": "67fbbd53-7c7d-4cfa-9409-6d737b4d92a9",
-      "Name": "CompatibilityFramework"
-    },
-    {
-      "UUID": "94399849-6d6c-4582-ad5e-c5bc52fd1408",
-      "Name": "No More Dirt and Blood"
-    },
-    {
       "UUID": "87d58f99-e259-4050-988f-f1e7fa56a072",
       "Name": "Alfira"
     },
@@ -149,10 +157,6 @@
       "Name": "UACunningStrike"
     },
     {
-      "UUID": "f75cb957-e7eb-48b5-8c6a-e94d02d8a84e",
-      "Name": "BetterLoot"
-    },
-    {
       "UUID": "64d01e62-c3ef-4523-85f3-7e28789c7d8a",
       "Name": "UnderwearOfRitualsnoMisty"
     },
@@ -173,16 +177,8 @@
       "Name": "Unvisual Volo's Eye"
     },
     {
-      "UUID": "255b2fda-2e05-4dad-b5e6-28587cea4854",
-      "Name": "AS_ExtraDyes_Bundle"
-    },
-    {
       "UUID": "4023c256-4242-4cd0-9afa-9026aaedf2d4",
       "Name": "SecretScrolls"
-    },
-    {
-      "UUID": "973d6e34-065a-48fb-9fee-18278c1f7e03",
-      "Name": "More Gold - C"
     },
     {
       "UUID": "2d3c3786-abaa-4356-9d03-02f8ffd07985",
@@ -203,10 +199,6 @@
     {
       "UUID": "fe952080-4cd5-43ca-8805-90e293144964",
       "Name": "ApprovalTweaks"
-    },
-    {
-      "UUID": "1d6ece6c-b9e1-430e-8263-7d223a78abmhSPM",
-      "Name": "Carry Weight Increased 9000 - Standalone Pickup More"
     },
     {
       "UUID": "e64e2e53-92c3-444e-a374-0d6638ed4e99",
@@ -261,12 +253,20 @@
       "Name": "5eSpells"
     },
     {
-      "UUID": "26c29727-92c0-4601-9bf2-043ca3e5b4d8",
-      "Name": "Warcaster"
+      "UUID": "d903677e-f24b-48ec-ab20-98dcc116a371",
+      "Name": "UnlockLevelCurve"
     },
     {
-      "UUID": "1d6ece6c-b9e1-430e-8263-7d223a78abmh",
-      "Name": "Carry Weight Increased 9000"
+      "UUID": "cf0b4eed-8b58-4981-8ab8-bf210d4db97b",
+      "Name": "UnlockLevelCurve_Patch_5eSpells"
+    },
+    {
+      "UUID": "e53ae4b5-a922-47ef-b69d-d55c5745a65b",
+      "Name": "UnlockLevelCurve_Patch_Double"
+    },
+    {
+      "UUID": "26c29727-92c0-4601-9bf2-043ca3e5b4d8",
+      "Name": "Warcaster"
     },
     {
       "UUID": "c5755cf1-d18d-4ed7-b762-55c9bad174e1",
@@ -345,20 +345,12 @@
       "Name": "DarkJusticiarAlways"
     },
     {
-      "UUID": "1c9f73f8-7513-49a9-8882-b796eab331f5",
-      "Name": "DyeDyeDye"
-    },
-    {
       "UUID": "00000000-0000-0000-0003-xRogerRogers",
       "Name": "DarkerDyes"
     },
     {
       "UUID": "36eec61c-9152-43d6-be8a-xOldBoyDemon",
       "Name": "Demon's Simple Dyes"
-    },
-    {
-      "UUID": "3e158fb8-686e-4153-9430-e27f4b9fb7f8",
-      "Name": "BagsBagsBags"
     },
     {
       "UUID": "48cc6be3-f1c4-4acb-9172-189f13b1d753",
@@ -391,18 +383,6 @@
     {
       "UUID": "b5c359a5-3894-4240-b532-0837ecf06d85",
       "Name": "ModifiedShortRest25"
-    },
-    {
-      "UUID": "d903677e-f24b-48ec-ab20-98dcc116a371",
-      "Name": "UnlockLevelCurve"
-    },
-    {
-      "UUID": "e53ae4b5-a922-47ef-b69d-d55c5745a65b",
-      "Name": "UnlockLevelCurve_Patch_Double"
-    },
-    {
-      "UUID": "cf0b4eed-8b58-4981-8ab8-bf210d4db97b",
-      "Name": "UnlockLevelCurve_Patch_5eSpells"
     },
     {
       "UUID": "bad404aa-feed-a0ee-8888-deeeeeeeeeef",
@@ -537,6 +517,22 @@
       "Name": "Unearthed Arcana"
     },
     {
+      "UUID": "94399849-6d6c-4582-ad5e-c5bc52fd1408",
+      "Name": "No More Dirt and Blood"
+    },
+    {
+      "UUID": "973d6e34-065a-48fb-9fee-18278c1f7e03",
+      "Name": "More Gold - C"
+    },
+    {
+      "UUID": "1d6ece6c-b9e1-430e-8263-7d223a78abmh",
+      "Name": "Carry Weight Increased 9000"
+    },
+    {
+      "UUID": "1d6ece6c-b9e1-430e-8263-7d223a78abmhSPM",
+      "Name": "Carry Weight Increased 9000 - Standalone Pickup More"
+    },
+    {
       "UUID": "57d87816-ac58-4a37-90ad-0fda409c5557",
       "Name": "StrongerBosses"
     },
@@ -547,6 +543,10 @@
     {
       "UUID": "e1fb0ff5-dd5e-471d-b2c4-c19c288fa5e7",
       "Name": "TacticianPlusStats"
+    },
+    {
+      "UUID": "67fbbd53-7c7d-4cfa-9409-6d737b4d92a9",
+      "Name": "CompatibilityFramework"
     }
   ]
 }
