@@ -13,8 +13,8 @@ permissions:
   contents: read
 
 jobs:
-  build-baseline:
-    name: Build July 31 MT baseline
+  build-engine:
+    name: Build GCS optimized DX11 engine
     runs-on: windows-latest
     timeout-minutes: 90
 
@@ -29,6 +29,7 @@ jobs:
 
       - name: Configure pagefile
         uses: al-cheb/configure-pagefile-action@v1.3
+        continue-on-error: true
         with:
           minimum-size: 8GB
           maximum-size: 8GB
@@ -49,20 +50,12 @@ jobs:
           git submodule update --init --recursive
           git rev-parse HEAD
 
-      - name: Apply GCS engine patches
+      - name: Apply GCS Pass 1 optimizations
         shell: pwsh
         run: |
-          $patchDir = Join-Path $env:GITHUB_WORKSPACE 'gcs-engine/patches'
-          if (Test-Path $patchDir) {
-            $patches = Get-ChildItem $patchDir -Filter '*.patch' | Sort-Object Name
-            foreach ($patch in $patches) {
-              Write-Host "Applying $($patch.Name)"
-              git -C engine apply --check $patch.FullName
-              git -C engine apply $patch.FullName
-            }
-          } else {
-            Write-Host 'No patches present; building compatibility baseline.'
-          }
+          python "$env:GITHUB_WORKSPACE/gcs-engine/apply_pass1.py" "$env:GITHUB_WORKSPACE/engine"
+          git -C engine diff --check
+          git -C engine diff --stat
 
       - name: Build DX11
         shell: pwsh
@@ -78,14 +71,17 @@ jobs:
           @(
             "upstream_repo=$env:XRAY_REPO",
             "upstream_commit=$env:XRAY_COMMIT",
+            "optimization_pass=1",
             "configuration=DX11",
+            "harness_commit=${{ github.sha }}",
             "runner=$env:RUNNER_OS"
           ) | Out-File artifact/BUILD_INFO.txt
+          git -C engine diff | Out-File artifact/GCS_PASS1_SOURCE_DIFF.patch
 
-      - name: Upload baseline artifacts
+      - name: Upload optimized artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: GCS-Performance-Engine-baseline-DX11
+          name: GCS-Performance-Engine-Pass1-DX11
           path: artifact
           if-no-files-found: error
           retention-days: 14
