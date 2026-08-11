@@ -71,7 +71,15 @@ jobs:
         shell: pwsh
         run: |
           New-Item -ItemType Directory -Force artifact | Out-Null
-          Get-ChildItem 'engine/_build/_game/bin_dbg' -File | Where-Object { $_.Extension -in '.exe','.pdb' } | Copy-Item -Destination artifact
+          $outputDir = Join-Path $env:GITHUB_WORKSPACE 'engine/_build/_game/bin'
+          $built = @(Get-ChildItem $outputDir -File | Where-Object { $_.Extension -in '.exe','.pdb' -and $_.Name -match '^AnomalyDX11' })
+          if ($built.Count -eq 0) {
+            Write-Host 'Expected DX11 outputs were not found. EXE/PDB candidates follow:'
+            Get-ChildItem "$env:GITHUB_WORKSPACE/engine" -Recurse -File | Where-Object { $_.Extension -in '.exe','.pdb' } | Select-Object FullName,Length
+            throw 'No AnomalyDX11 EXE/PDB outputs found.'
+          }
+          $built | Select-Object FullName,Length
+          $built | Copy-Item -Destination artifact
           Get-FileHash artifact/* -Algorithm SHA256 | Format-Table -AutoSize | Out-File artifact/SHA256SUMS.txt
           @(
             "upstream_repo=$env:XRAY_REPO",
