@@ -71,21 +71,52 @@ jobs:
         shell: pwsh
         run: |
           New-Item -ItemType Directory -Force artifact | Out-Null
-          $outputDir = Join-Path $env:GITHUB_WORKSPACE 'engine/_build/_game/bin'
-          $built = @(Get-ChildItem $outputDir -File | Where-Object { $_.Extension -in '.exe','.pdb' -and $_.Name -match '^AnomalyDX11' })
-          if ($built.Count -eq 0) {
-            Write-Host 'Expected DX11 outputs were not found. EXE/PDB candidates follow:'
-            Get-ChildItem "$env:GITHUB_WORKSPACE/engine" -Recurse -File | Where-Object { $_.Extension -in '.exe','.pdb' } | Select-Object FullName,Length
-            throw 'No AnomalyDX11 EXE/PDB outputs found.'
+
+          Write-Host 'Scanning complete workspace for built executable candidates...'
+          $allExe = @(Get-ChildItem -Path $env:GITHUB_WORKSPACE -Recurse -File -Filter '*.exe' -ErrorAction SilentlyContinue |
+            Where-Object { $_.FullName -notmatch '\\.git\\' } |
+            Sort-Object Length -Descending)
+          $allExe | Select-Object FullName,Length,LastWriteTime | Format-Table -AutoSize
+
+          $exe = $allExe | Where-Object {
+            $_.Name -match '^AnomalyDX11.*\.exe$' -or $_.Name -match '^Anomaly.*DX11.*\.exe$'
+          } | Select-Object -First 1
+
+          if (-not $exe) {
+            $exe = $allExe | Where-Object {
+              $_.DirectoryName -match '_build|_game|bin' -and $_.Length -gt 1000000
+            } | Select-Object -First 1
           }
-          $built | Select-Object FullName,Length
-          $built | Copy-Item -Destination artifact
+
+          if (-not $exe) {
+            throw 'No plausible built DX11 executable found anywhere in the workspace.'
+          }
+
+          Write-Host "Selected engine executable: $($exe.FullName) ($($exe.Length) bytes)"
+          Copy-Item $exe.FullName -Destination 'artifact/AnomalyDX11GCS.exe'
+
+          $allPdb = @(Get-ChildItem -Path $env:GITHUB_WORKSPACE -Recurse -File -Filter '*.pdb' -ErrorAction SilentlyContinue |
+            Where-Object { $_.FullName -notmatch '\\.git\\' } |
+            Sort-Object Length -Descending)
+          $allPdb | Select-Object FullName,Length,LastWriteTime | Format-Table -AutoSize
+
+          $pdb = $allPdb | Where-Object {
+            $_.BaseName -eq $exe.BaseName -or $_.Name -match '^AnomalyDX11.*\.pdb$' -or $_.Name -match '^Anomaly.*DX11.*\.pdb$'
+          } | Select-Object -First 1
+          if ($pdb) {
+            Write-Host "Selected PDB: $($pdb.FullName) ($($pdb.Length) bytes)"
+            Copy-Item $pdb.FullName -Destination 'artifact/AnomalyDX11GCS.pdb'
+          } else {
+            Write-Warning 'No matching PDB found; EXE will still be packaged.'
+          }
+
           Get-FileHash artifact/* -Algorithm SHA256 | Format-Table -AutoSize | Out-File artifact/SHA256SUMS.txt
           @(
             "upstream_repo=$env:XRAY_REPO",
             "upstream_commit=$env:XRAY_COMMIT",
             "optimization_pass=2",
             "configuration=DX11",
+            "selected_exe=$($exe.FullName)",
             "harness_commit=${{ github.sha }}",
             "runner=$env:RUNNER_OS"
           ) | Out-File artifact/BUILD_INFO.txt
