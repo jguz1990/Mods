@@ -1,0 +1,91 @@
+name: GCS Performance Engine
+
+on:
+  push:
+    branches:
+      - agent/gcs-performance-engine
+    paths:
+      - '.github/workflows/gcs-performance-engine.yml'
+      - 'gcs-engine/**'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build-baseline:
+    name: Build July 31 MT baseline
+    runs-on: windows-latest
+    timeout-minutes: 90
+
+    env:
+      XRAY_REPO: https://github.com/themrdemonized/xray-monolith.git
+      XRAY_COMMIT: f3f5a8a3b5233205ff9764b1f5fd10ddaf31045e
+      SOLUTION: src/engine-vs2022.sln
+
+    steps:
+      - name: Checkout build harness
+        uses: actions/checkout@v4
+
+      - name: Configure pagefile
+        uses: al-cheb/configure-pagefile-action@v1.3
+        with:
+          minimum-size: 8GB
+          maximum-size: 8GB
+          disk-root: 'C:'
+
+      - name: Set up MSBuild
+        uses: microsoft/setup-msbuild@v2
+        with:
+          msbuild-architecture: x64
+
+      - name: Fetch exact X-Ray MT source
+        shell: pwsh
+        run: |
+          git clone --recursive --branch all-in-one-vs2022-wpo-mt $env:XRAY_REPO engine
+          Set-Location engine
+          git checkout --detach $env:XRAY_COMMIT
+          git submodule sync --recursive
+          git submodule update --init --recursive
+          git rev-parse HEAD
+
+      - name: Apply GCS engine patches
+        shell: pwsh
+        run: |
+          $patchDir = Join-Path $env:GITHUB_WORKSPACE 'gcs-engine/patches'
+          if (Test-Path $patchDir) {
+            $patches = Get-ChildItem $patchDir -Filter '*.patch' | Sort-Object Name
+            foreach ($patch in $patches) {
+              Write-Host "Applying $($patch.Name)"
+              git -C engine apply --check $patch.FullName
+              git -C engine apply $patch.FullName
+            }
+          } else {
+            Write-Host 'No patches present; building compatibility baseline.'
+          }
+
+      - name: Build DX11
+        shell: pwsh
+        working-directory: engine
+        run: msbuild /m /p:Configuration=DX11 /p:Platform=x64 $env:SOLUTION
+
+      - name: Collect outputs
+        shell: pwsh
+        run: |
+          New-Item -ItemType Directory -Force artifact | Out-Null
+          Get-ChildItem 'engine/_build/_game/bin_dbg' -File | Where-Object { $_.Extension -in '.exe','.pdb' } | Copy-Item -Destination artifact
+          Get-FileHash artifact/* -Algorithm SHA256 | Format-Table -AutoSize | Out-File artifact/SHA256SUMS.txt
+          @(
+            "upstream_repo=$env:XRAY_REPO",
+            "upstream_commit=$env:XRAY_COMMIT",
+            "configuration=DX11",
+            "runner=$env:RUNNER_OS"
+          ) | Out-File artifact/BUILD_INFO.txt
+
+      - name: Upload baseline artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: GCS-Performance-Engine-baseline-DX11
+          path: artifact
+          if-no-files-found: error
+          retention-days: 14
