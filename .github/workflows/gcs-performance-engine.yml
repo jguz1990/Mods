@@ -54,6 +54,11 @@ jobs:
         shell: pwsh
         run: |
           python "$env:GITHUB_WORKSPACE/gcs-engine/apply_pass1.py" "$env:GITHUB_WORKSPACE/engine"
+
+      - name: Apply GCS Pass 2 optimizations
+        shell: pwsh
+        run: |
+          python "$env:GITHUB_WORKSPACE/gcs-engine/apply_pass2.py" "$env:GITHUB_WORKSPACE/engine"
           git -C engine diff --check
           git -C engine diff --stat
 
@@ -71,17 +76,17 @@ jobs:
           @(
             "upstream_repo=$env:XRAY_REPO",
             "upstream_commit=$env:XRAY_COMMIT",
-            "optimization_pass=1",
+            "optimization_pass=2",
             "configuration=DX11",
             "harness_commit=${{ github.sha }}",
             "runner=$env:RUNNER_OS"
           ) | Out-File artifact/BUILD_INFO.txt
-          git -C engine diff | Out-File artifact/GCS_PASS1_SOURCE_DIFF.patch
+          git -C engine diff | Out-File artifact/GCS_PASS2_SOURCE_DIFF.patch
 
       - name: Upload optimized artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: GCS-Performance-Engine-Pass1-DX11
+          name: GCS-Performance-Engine-Pass2-DX11
           path: artifact
           if-no-files-found: error
           retention-days: 14
